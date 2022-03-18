@@ -1,0 +1,40 @@
+public class Vendedor{
+
+    String nome;
+    int cpf;
+    String email;
+    int telefone;
+    String cargo;
+
+
+    public vendedor(String nome, String cargo, int cpf, String email, int telefone){
+
+        this.nome = nome;
+        this.cargo = cargo;
+        this.cpf = cpf;
+        this.email = email;
+        this.telefone = telefone;
+
+    }
+
+    public void Info(){
+
+        System.out.println("Nome: " + nome + "\n" +
+        "Cargo: " + cargo + "\n" +
+        "cpf: " + cpf + "\n" +
+        "Email: " + email + "\n" +
+        "Telefone: " + telefone + "\n" + "\n");
+    }
+
+
+    public static void main(String[] args) {
+
+        vendedor C1 = new vendedor("Pedro Paulo", "Vendedor Junior", 45125486512, "pedro.pp@outlook.com.br", 12982546985);
+        vendedor C2 = new vendedor("Cris Brauw", "Gerente de Vendas", 78551236521, "brauw-cris@gmail.com", 12936584982);
+
+        C1.Info();
+        C2.Info();
+        
+    }
+
+}
