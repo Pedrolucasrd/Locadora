@@ -1,0 +1,53 @@
+public class Carro{
+
+    //atributos de classe
+    String placa;
+    double cavalos;
+    String modelo;
+    String cor;
+    String marca;
+    boolean cambio_automatico;
+    int ano;
+    float preço;
+
+
+    public Carro(String placa, double cavalos, String modelo, String cor,
+     String marca, boolean cambio_automatico, int ano){
+
+        this.placa = placa;
+        this.cavalos = cavalos;
+        this.modelo = modelo;
+        this.cor = cor;
+        this.marca = marca;
+        this.cambio_automatico = cambio_automatico;
+        this.ano = ano;
+    }
+
+    public void set_cor(String novacor){
+        cor = novacor;
+    }
+
+    public void Informacao(){
+
+        System.out.println("Placa: " + placa + "\n" +
+        "Cavalos: " + cavalos + "\n" +
+        "Modelo: " + modelo + "\n" +
+        "Cor: " + cor + "\n" +
+        "Com Cambio Automatico: " + cambio_automatico + "\n" +
+        "Ano: " + ano + "\n" + "\n");
+    }
+
+
+    public static void main(String[] args) {
+
+        Carro C1 = new Carro("NERW004", 8.0, "Sandero", "Branco", "Renault", true, 2015);
+        Carro C2 = new Carro("GERG448", 2.0, "Mobi", "Cinza", "Fiat", true, 2018);
+
+        C1.Informacao();
+        C2.Informacao();
+        
+        C1.set_cor("Preto");
+        C1.Informacao();
+    }
+
+}
