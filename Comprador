@@ -1,0 +1,36 @@
+public class Comprador{
+
+    String nome;
+    int cpf;
+    String email;
+    int telefone;
+
+    public Comprador(String nome, int cpf, String email, int telefone){
+
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+        this.telefone = telefone;
+
+    }
+
+    public void Info(){
+
+        System.out.println("Nome: " + nome + "\n" +
+        "cpf: " + cpf + "\n" +
+        "Email: " + email + "\n" +
+        "Telefone: " + telefone + "\n" + "\n");
+    }
+
+
+    public static void main(String[] args) {
+
+        Comp C1 = new comprador("Joel Santos", 47854812265, "joel18@gmail.com", 12982697754);
+        Comp C2 = new comprador("Hebert Freire", 78554836565, "hebert.fre41@gmail.com", 12997286541);
+
+        C1.Info();
+        C2.Info();
+        
+    }
+
+}
